@@ -1,0 +1,3 @@
+[console_scripts]
+goto_pose_node = turtle_control.goto_pose:main
+square_movement_node = turtle_control.square_movment:main

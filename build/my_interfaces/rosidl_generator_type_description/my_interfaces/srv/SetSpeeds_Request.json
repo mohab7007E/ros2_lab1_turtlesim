@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "my_interfaces/srv/SetSpeeds_Request",
+      "fields": [
+        {
+          "name": "max_linear",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "max_angular",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "my_interfaces/srv/SetSpeeds_Request",
+      "hash_string": "RIHS01_7dfee6bc93cb8297cdb1d8df4e39f2df4cb46fae18c713f015a192cd20a01464"
+    }
+  ]
+}

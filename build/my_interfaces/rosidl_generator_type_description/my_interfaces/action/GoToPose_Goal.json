@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "my_interfaces/action/GoToPose_Goal",
+      "fields": [
+        {
+          "name": "goal_pose",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "my_interfaces/msg/Target"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "my_interfaces/msg/Target",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "yaw",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "my_interfaces/action/GoToPose_Goal",
+      "hash_string": "RIHS01_d39488537608bd5cb0de14693f8d6d16adffea4ddfad0927199efcc4965d9bbf"
+    },
+    {
+      "type_name": "my_interfaces/msg/Target",
+      "hash_string": "RIHS01_2dff29cd33546e696f972c90532a9482c6e64e7a4e95970b48788df8822d716c"
+    }
+  ]
+}

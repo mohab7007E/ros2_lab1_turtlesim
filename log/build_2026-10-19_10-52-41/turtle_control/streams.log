@@ -1,0 +1,37 @@
+[1.348s] Invoking command in '/home/mohab14/TASK/src/turtle_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mohab14/TASK/build/turtle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages:/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages:/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_control build --build-base /home/mohab14/TASK/build/turtle_control/build install --record /home/mohab14/TASK/build/turtle_control/install.log --install-scripts $base/lib/turtle_control --single-version-externally-managed install_data
+[1.731s] running egg_info
+[1.732s] creating ../../build/turtle_control/turtle_control.egg-info
+[1.757s] writing ../../build/turtle_control/turtle_control.egg-info/PKG-INFO
+[1.758s] writing dependency_links to ../../build/turtle_control/turtle_control.egg-info/dependency_links.txt
+[1.758s] writing entry points to ../../build/turtle_control/turtle_control.egg-info/entry_points.txt
+[1.758s] writing requirements to ../../build/turtle_control/turtle_control.egg-info/requires.txt
+[1.758s] writing top-level names to ../../build/turtle_control/turtle_control.egg-info/top_level.txt
+[1.758s] writing manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'
+[1.812s] reading manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'
+[1.813s] writing manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'
+[1.813s] running build
+[1.813s] running build_py
+[1.814s] creating /home/mohab14/TASK/build/turtle_control/build
+[1.814s] creating /home/mohab14/TASK/build/turtle_control/build/lib
+[1.814s] creating /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control
+[1.814s] copying turtle_control/__init__.py -> /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control
+[1.814s] copying turtle_control/controller_node.py -> /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control
+[1.814s] running install
+[1.823s] running install_lib
+[1.850s] creating /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control
+[1.850s] copying /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control/__init__.py -> /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control
+[1.850s] copying /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control/controller_node.py -> /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control
+[1.850s] byte-compiling /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control/__init__.py to __init__.cpython-312.pyc
+[1.851s] byte-compiling /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control/controller_node.py to controller_node.cpython-312.pyc
+[1.852s] running install_data
+[1.852s] creating /home/mohab14/TASK/install/turtle_control/share/ament_index
+[1.852s] creating /home/mohab14/TASK/install/turtle_control/share/ament_index/resource_index
+[1.852s] creating /home/mohab14/TASK/install/turtle_control/share/ament_index/resource_index/packages
+[1.852s] copying resource/turtle_control -> /home/mohab14/TASK/install/turtle_control/share/ament_index/resource_index/packages
+[1.852s] copying package.xml -> /home/mohab14/TASK/install/turtle_control/share/turtle_control
+[1.852s] running install_egg_info
+[1.879s] Copying ../../build/turtle_control/turtle_control.egg-info to /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info
+[1.880s] running install_scripts
+[2.054s] Installing controller script to /home/mohab14/TASK/install/turtle_control/lib/turtle_control
+[2.054s] writing list of installed files to '/home/mohab14/TASK/build/turtle_control/install.log'
+[2.081s] Invoked command in '/home/mohab14/TASK/src/turtle_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mohab14/TASK/build/turtle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages:/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages:/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_control build --build-base /home/mohab14/TASK/build/turtle_control/build install --record /home/mohab14/TASK/build/turtle_control/install.log --install-scripts $base/lib/turtle_control --single-version-externally-managed install_data

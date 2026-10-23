@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "my_interfaces/action/GoToPose_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "my_interfaces/action/GoToPose_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "my_interfaces/action/GoToPose_Result",
+        "fields": [
+          {
+            "name": "success",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "my_interfaces/action/GoToPose_GetResult_Response",
+      "hash_string": "RIHS01_1f190642039db1bf719ef7abd7c901b127829839a758fa854c889e3ef215ad56"
+    },
+    {
+      "type_name": "my_interfaces/action/GoToPose_Result",
+      "hash_string": "RIHS01_ea79eeb32fde79fdbabcee751cc1781914c36f7b4f11553a2749a9f17fedf2b4"
+    }
+  ]
+}

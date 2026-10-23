@@ -1,0 +1,3 @@
+[console_scripts]
+pub = my_package.my_publisher:main
+sub = my_package.my_subscriber:main

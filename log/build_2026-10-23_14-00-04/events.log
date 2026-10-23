@@ -1,0 +1,552 @@
+[0.000000] (-) TimerEvent: {}
+[0.000205] (my_interfaces) JobQueued: {'identifier': 'my_interfaces', 'dependencies': OrderedDict()}
+[0.000292] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000335] (turtle_control) JobQueued: {'identifier': 'turtle_control', 'dependencies': OrderedDict({'my_interfaces': '/home/mohab14/TASK/install/my_interfaces'})}
+[0.000375] (my_interfaces) JobStarted: {'identifier': 'my_interfaces'}
+[0.012075] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.017766] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'cmake'}
+[0.019163] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'build'}
+[0.019948] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mohab14/TASK/build/my_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/mohab14/TASK/build/my_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mohab14', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mohab14', 'OLDPWD': '/home/mohab14', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mohab14', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mohab14', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mohab-Precision-5550:@/tmp/.ICE-unix/2459,unix/mohab-Precision-5550:/tmp/.ICE-unix/2459', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e06d2383_164d_44d6_a710_a859506472e5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mohab14/TASK/build/my_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.097086] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099044] (-) TimerEvent: {}
+[0.199249] (-) TimerEvent: {}
+[0.247956] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.252514] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.299381] (-) TimerEvent: {}
+[0.311496] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.364301] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.368503] (my_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.399469] (-) TimerEvent: {}
+[0.499739] (-) TimerEvent: {}
+[0.600003] (-) TimerEvent: {}
+[0.700220] (-) TimerEvent: {}
+[0.800476] (-) TimerEvent: {}
+[0.824053] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.900606] (-) TimerEvent: {}
+[0.953473] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.000729] (-) TimerEvent: {}
+[1.100994] (-) TimerEvent: {}
+[1.119155] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.121046] (my_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.201119] (-) TimerEvent: {}
+[1.234650] (my_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/home/mohab14/TASK/build/my_package/build', 'install', '--record', '/home/mohab14/TASK/build/my_package/install.log', '--install-scripts', '$base/lib/my_package', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mohab14/TASK/src/my_package', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mohab14', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mohab14', 'OLDPWD': '/home/mohab14', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mohab14', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mohab14', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mohab-Precision-5550:@/tmp/.ICE-unix/2459,unix/mohab-Precision-5550:/tmp/.ICE-unix/2459', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e06d2383_164d_44d6_a710_a859506472e5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mohab14/TASK/build/my_package', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mohab14/TASK/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[1.301249] (-) TimerEvent: {}
+[1.401512] (-) TimerEvent: {}
+[1.501778] (-) TimerEvent: {}
+[1.512469] (my_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.598247] (my_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.601863] (-) TimerEvent: {}
+[1.607432] (my_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.609442] (my_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.618669] (my_interfaces) StdoutLine: {'line': b'-- Configuring done (1.5s)\n'}
+[1.624167] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.651396] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[1.651826] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[1.652076] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[1.652328] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[1.652574] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[1.696318] (my_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[1.701972] (-) TimerEvent: {}
+[1.708369] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.709684] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.709952] (my_package) StdoutLine: {'line': b'running build\n'}
+[1.710066] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[1.710837] (my_package) StdoutLine: {'line': b'running install\n'}
+[1.716820] (my_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/mohab14/TASK/build/my_interfaces\n'}
+[1.719480] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.749084] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[1.749623] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.753995] (my_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[1.754216] (my_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.768758] (my_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_my_interfaces\n'}
+[1.779919] (my_package) StdoutLine: {'line': b"removing '/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[1.780423] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info\n'}
+[1.781839] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.802079] (-) TimerEvent: {}
+[1.902379] (-) TimerEvent: {}
+[1.961985] (my_package) StdoutLine: {'line': b'Installing pub script to /home/mohab14/TASK/install/my_package/lib/my_package\n'}
+[1.962365] (my_package) StdoutLine: {'line': b'Installing sub script to /home/mohab14/TASK/install/my_package/lib/my_package\n'}
+[1.962817] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/mohab14/TASK/build/my_package/install.log'\n"}
+[1.992744] (my_package) CommandEnded: {'returncode': 0}
+[2.002493] (-) TimerEvent: {}
+[2.013204] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[2.069974] (my_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.072441] (my_interfaces) StdoutLine: {'line': b'[  3%] Built target my_interfaces__rosidl_generator_type_description\n'}
+[2.082963] (my_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.093739] (my_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.099709] (my_interfaces) StdoutLine: {'line': b'writing my_interfaces.egg-info/PKG-INFO\n'}
+[2.099956] (my_interfaces) StdoutLine: {'line': b'writing dependency_links to my_interfaces.egg-info/dependency_links.txt\n'}
+[2.100186] (my_interfaces) StdoutLine: {'line': b'writing top-level names to my_interfaces.egg-info/top_level.txt\n'}
+[2.102569] (-) TimerEvent: {}
+[2.176397] (my_interfaces) StdoutLine: {'line': b'[  6%] Built target my_interfaces__rs\n'}
+[2.182653] (my_interfaces) StdoutLine: {'line': b"reading manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[2.183576] (my_interfaces) StdoutLine: {'line': b"writing manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[2.202699] (-) TimerEvent: {}
+[2.215455] (my_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_my_interfaces_egg\n'}
+[2.302820] (-) TimerEvent: {}
+[2.403061] (-) TimerEvent: {}
+[2.503358] (-) TimerEvent: {}
+[2.603572] (-) TimerEvent: {}
+[2.703797] (-) TimerEvent: {}
+[2.804046] (-) TimerEvent: {}
+[2.904252] (-) TimerEvent: {}
+[3.004504] (-) TimerEvent: {}
+[3.090710] (my_interfaces) StdoutLine: {'line': b'[  6%] Built target my_interfaces__cpp\n'}
+[3.104592] (-) TimerEvent: {}
+[3.204841] (-) TimerEvent: {}
+[3.258226] (my_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/target__description.c.o\x1b[0m\n'}
+[3.258548] (my_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[3.258739] (my_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/target__functions.c.o\x1b[0m\n'}
+[3.259463] (my_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/set_speeds__functions.c.o\x1b[0m\n'}
+[3.261204] (my_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/set_speeds__type_support.c.o\x1b[0m\n'}
+[3.261478] (my_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/set_speeds__description.c.o\x1b[0m\n'}
+[3.261779] (my_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/go_to_pose__description.c.o\x1b[0m\n'}
+[3.261980] (my_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/draw_square__functions.c.o\x1b[0m\n'}
+[3.262157] (my_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/go_to_pose__functions.c.o\x1b[0m\n'}
+[3.263064] (my_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/go_to_pose__type_support.c.o\x1b[0m\n'}
+[3.263297] (my_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/draw_square__description.c.o\x1b[0m\n'}
+[3.263492] (my_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/draw_square__type_support.c.o\x1b[0m\n'}
+[3.304974] (-) TimerEvent: {}
+[3.405267] (-) TimerEvent: {}
+[3.505534] (-) TimerEvent: {}
+[3.546772] (my_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.603132] (my_interfaces) StdoutLine: {'line': b'[ 26%] Built target my_interfaces__rosidl_generator_c\n'}
+[3.605629] (-) TimerEvent: {}
+[3.615835] (my_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.616219] (my_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.616717] (my_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.616987] (my_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.617600] (my_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.618963] (my_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.705738] (-) TimerEvent: {}
+[3.806029] (-) TimerEvent: {}
+[3.906325] (-) TimerEvent: {}
+[4.006602] (-) TimerEvent: {}
+[4.106863] (-) TimerEvent: {}
+[4.207139] (-) TimerEvent: {}
+[4.239452] (my_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[4.239743] (my_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/action/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.239940] (my_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/srv/set_speeds__type_support.cpp.o\x1b[0m\n'}
+[4.240119] (my_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/action/draw_square__type_support.cpp.o\x1b[0m\n'}
+[4.300140] (my_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[4.300967] (my_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.301373] (my_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/draw_square__type_support.cpp.o\x1b[0m\n'}
+[4.302454] (my_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/set_speeds__type_support.cpp.o\x1b[0m\n'}
+[4.307224] (-) TimerEvent: {}
+[4.382290] (my_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.407325] (-) TimerEvent: {}
+[4.455082] (my_interfaces) StdoutLine: {'line': b'[ 49%] Built target my_interfaces__rosidl_typesupport_c\n'}
+[4.507425] (-) TimerEvent: {}
+[4.588442] (my_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/set_speeds__type_support.c.o\x1b[0m\n'}
+[4.588749] (my_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[4.588946] (my_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/draw_square__type_support.c.o\x1b[0m\n'}
+[4.595599] (my_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/go_to_pose__type_support.c.o\x1b[0m\n'}
+[4.607856] (-) TimerEvent: {}
+[4.621235] (my_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[4.630807] (my_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/srv/detail/set_speeds__type_support.cpp.o\x1b[0m\n'}
+[4.673837] (my_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/action/detail/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.694147] (my_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/action/detail/draw_square__type_support.cpp.o\x1b[0m\n'}
+[4.707960] (-) TimerEvent: {}
+[4.726342] (my_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.785382] (my_interfaces) StdoutLine: {'line': b'[ 63%] Built target my_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.808128] (-) TimerEvent: {}
+[4.908660] (-) TimerEvent: {}
+[5.008941] (-) TimerEvent: {}
+[5.109238] (-) TimerEvent: {}
+[5.209553] (-) TimerEvent: {}
+[5.284137] (my_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[5.285430] (my_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/srv/detail/dds_fastrtps/set_speeds__type_support.cpp.o\x1b[0m\n'}
+[5.285736] (my_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/action/detail/dds_fastrtps/draw_square__type_support.cpp.o\x1b[0m\n'}
+[5.290274] (my_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/action/detail/dds_fastrtps/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[5.310223] (-) TimerEvent: {}
+[5.410527] (-) TimerEvent: {}
+[5.510837] (-) TimerEvent: {}
+[5.611204] (-) TimerEvent: {}
+[5.712149] (-) TimerEvent: {}
+[5.722549] (my_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.812319] (-) TimerEvent: {}
+[5.822760] (my_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[5.824138] (my_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/action/detail/draw_square__type_support_c.cpp.o\x1b[0m\n'}
+[5.824397] (my_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/action/detail/go_to_pose__type_support_c.cpp.o\x1b[0m\n'}
+[5.824692] (my_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/srv/detail/set_speeds__type_support_c.cpp.o\x1b[0m\n'}
+[5.886222] (my_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_interfaces__rosidl_typesupport_cpp\n'}
+[5.912432] (-) TimerEvent: {}
+[6.012763] (-) TimerEvent: {}
+[6.104882] (my_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.113240] (-) TimerEvent: {}
+[6.213579] (-) TimerEvent: {}
+[6.260824] (my_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[6.313694] (-) TimerEvent: {}
+[6.414040] (-) TimerEvent: {}
+[6.514373] (-) TimerEvent: {}
+[6.614696] (-) TimerEvent: {}
+[6.715012] (-) TimerEvent: {}
+[6.815329] (-) TimerEvent: {}
+[6.898240] (my_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.915425] (-) TimerEvent: {}
+[6.960923] (my_interfaces) StdoutLine: {'line': b'[ 80%] Built target my_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[7.015520] (-) TimerEvent: {}
+[7.067333] (my_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.115666] (-) TimerEvent: {}
+[7.180589] (my_interfaces) StdoutLine: {'line': b'[ 81%] Built target my_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.207487] (my_interfaces) StdoutLine: {'line': b'[ 81%] Built target my_interfaces\n'}
+[7.215770] (-) TimerEvent: {}
+[7.252403] (my_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.315969] (-) TimerEvent: {}
+[7.416415] (-) TimerEvent: {}
+[7.516684] (-) TimerEvent: {}
+[7.616935] (-) TimerEvent: {}
+[7.717194] (-) TimerEvent: {}
+[7.817438] (-) TimerEvent: {}
+[7.917688] (-) TimerEvent: {}
+[8.017938] (-) TimerEvent: {}
+[8.118198] (-) TimerEvent: {}
+[8.218418] (-) TimerEvent: {}
+[8.318662] (-) TimerEvent: {}
+[8.418911] (-) TimerEvent: {}
+[8.519163] (-) TimerEvent: {}
+[8.619427] (-) TimerEvent: {}
+[8.719675] (-) TimerEvent: {}
+[8.819926] (-) TimerEvent: {}
+[8.920180] (-) TimerEvent: {}
+[9.020428] (-) TimerEvent: {}
+[9.120660] (-) TimerEvent: {}
+[9.157845] (my_interfaces) StdoutLine: {'line': b'[ 83%] Built target my_interfaces__py\n'}
+[9.187427] (my_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_go_to_pose_s.c.o\x1b[0m\n'}
+[9.187767] (my_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_draw_square_s.c.o\x1b[0m\n'}
+[9.187956] (my_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_target_s.c.o\x1b[0m\n'}
+[9.188520] (my_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_set_speeds_s.c.o\x1b[0m\n'}
+[9.220755] (-) TimerEvent: {}
+[9.321029] (-) TimerEvent: {}
+[9.421252] (-) TimerEvent: {}
+[9.470386] (my_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[9.521363] (-) TimerEvent: {}
+[9.524128] (my_interfaces) StdoutLine: {'line': b'[ 90%] Built target my_interfaces__rosidl_generator_py\n'}
+[9.548249] (my_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.548448] (my_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.548573] (my_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.621478] (-) TimerEvent: {}
+[9.721808] (-) TimerEvent: {}
+[9.768053] (my_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.774902] (my_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.780065] (my_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.809728] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[9.813122] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces_s__rosidl_typesupport_c\n'}
+[9.819739] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[9.821893] (-) TimerEvent: {}
+[9.834024] (my_interfaces) CommandEnded: {'returncode': 0}
+[9.834959] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'install'}
+[9.847864] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mohab14/TASK/build/my_interfaces'], 'cwd': '/home/mohab14/TASK/build/my_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mohab14', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mohab14', 'OLDPWD': '/home/mohab14', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mohab14', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mohab14', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mohab-Precision-5550:@/tmp/.ICE-unix/2459,unix/mohab-Precision-5550:/tmp/.ICE-unix/2459', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e06d2383_164d_44d6_a710_a859506472e5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mohab14/TASK/build/my_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.864366] (my_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.864967] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_interfaces\n'}
+[9.865823] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/msg/Target.json\n'}
+[9.866312] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/srv/SetSpeeds.json\n'}
+[9.866895] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/action/GoToPose.json\n'}
+[9.867542] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/action/DrawSquare.json\n'}
+[9.868019] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[9.868482] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[9.868953] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[9.869458] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__functions.c\n'}
+[9.869932] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__struct.h\n'}
+[9.870410] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__functions.h\n'}
+[9.870870] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__type_support.h\n'}
+[9.871348] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__description.c\n'}
+[9.871850] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__type_support.c\n'}
+[9.872331] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/set_speeds.h\n'}
+[9.872840] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[9.873285] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/go_to_pose.h\n'}
+[9.873672] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[9.874131] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__description.c\n'}
+[9.874602] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__functions.c\n'}
+[9.874979] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.c\n'}
+[9.875518] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__struct.h\n'}
+[9.875976] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__functions.h\n'}
+[9.876451] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.h\n'}
+[9.876908] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__type_support.h\n'}
+[9.877379] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__type_support.c\n'}
+[9.877842] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__description.c\n'}
+[9.878370] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__struct.h\n'}
+[9.878821] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__functions.h\n'}
+[9.879312] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__functions.c\n'}
+[9.879804] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/draw_square.h\n'}
+[9.880246] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[9.880700] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[9.881152] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__functions.c\n'}
+[9.881613] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.h\n'}
+[9.882065] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__description.c\n'}
+[9.882440] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__struct.h\n'}
+[9.882694] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__functions.h\n'}
+[9.882996] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.c\n'}
+[9.883366] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/target.h\n'}
+[9.883819] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.884189] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/library_path.sh\n'}
+[9.884561] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/library_path.dsv\n'}
+[9.884891] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so\n'}
+[9.885485] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so" to ""\n'}
+[9.885951] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[9.886469] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[9.886955] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[9.887443] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__rosidl_typesupport_fastrtps_c.h\n'}
+[9.887903] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[9.888141] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[9.888456] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__rosidl_typesupport_fastrtps_c.h\n'}
+[9.888744] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[9.889189] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[9.889590] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[9.889966] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[9.890334] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.890793] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[9.891303] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.891766] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[9.892262] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[9.892650] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[9.893120] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__rosidl_typesupport_introspection_c.h\n'}
+[9.893594] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__type_support.c\n'}
+[9.894024] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[9.894498] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[9.894890] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.c\n'}
+[9.895323] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_introspection_c.h\n'}
+[9.895586] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__rosidl_typesupport_introspection_c.h\n'}
+[9.895867] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__type_support.c\n'}
+[9.896230] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[9.896628] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[9.897100] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[9.897492] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.c\n'}
+[9.897805] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.898054] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[9.898427] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.898876] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so\n'}
+[9.899795] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[9.900347] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[9.900837] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[9.901315] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/set_speeds.hpp\n'}
+[9.901769] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[9.902250] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__traits.hpp\n'}
+[9.902787] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__builder.hpp\n'}
+[9.903217] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__type_support.hpp\n'}
+[9.903635] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__struct.hpp\n'}
+[9.904143] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[9.904659] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[9.905140] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__traits.hpp\n'}
+[9.905704] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__struct.hpp\n'}
+[9.906120] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__builder.hpp\n'}
+[9.906564] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__struct.hpp\n'}
+[9.907094] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.hpp\n'}
+[9.907572] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__builder.hpp\n'}
+[9.908061] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__traits.hpp\n'}
+[9.908503] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__type_support.hpp\n'}
+[9.909002] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/go_to_pose.hpp\n'}
+[9.909406] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/draw_square.hpp\n'}
+[9.909790] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[9.910309] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/target.hpp\n'}
+[9.910705] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[9.911250] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__traits.hpp\n'}
+[9.911705] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.hpp\n'}
+[9.912216] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__struct.hpp\n'}
+[9.912611] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__builder.hpp\n'}
+[9.912989] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[9.913310] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[9.913683] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[9.914119] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[9.914510] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/dds_fastrtps\n'}
+[9.914862] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.915336] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[9.915671] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[9.915905] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/dds_fastrtps\n'}
+[9.916265] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.916605] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.916937] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[9.917227] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[9.917459] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/dds_fastrtps\n'}
+[9.917891] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.918268] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.918579] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.918789] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.918985] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[9.919192] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[9.919407] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[9.919605] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__type_support.cpp\n'}
+[9.919809] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/set_speeds__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.920014] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[9.920323] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[9.920520] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.cpp\n'}
+[9.920731] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.920984] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.921188] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/draw_square__type_support.cpp\n'}
+[9.921399] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[9.921586] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[9.921772] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.921973] (-) TimerEvent: {}
+[9.922235] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.cpp\n'}
+[9.922507] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[9.922715] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.922934] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so\n'}
+[9.923268] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[9.923646] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/pythonpath.sh\n'}
+[9.924052] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/pythonpath.dsv\n'}
+[9.924368] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info\n'}
+[9.924657] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[9.924879] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[9.925224] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[9.925485] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[9.925783] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces\n'}
+[9.926000] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.926303] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/__init__.py\n'}
+[9.926617] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv\n'}
+[9.926897] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/_set_speeds_s.c\n'}
+[9.927243] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/__init__.py\n'}
+[9.927467] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/_set_speeds.py\n'}
+[9.927729] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action\n'}
+[9.927990] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/__init__.py\n'}
+[9.928266] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_draw_square_s.c\n'}
+[9.928479] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_go_to_pose.py\n'}
+[9.928697] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_go_to_pose_s.c\n'}
+[9.928994] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_draw_square.py\n'}
+[9.929212] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.929496] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so\n'}
+[9.929755] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[9.929973] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[9.930283] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.930506] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg\n'}
+[9.930805] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/__init__.py\n'}
+[9.931011] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/_target_s.c\n'}
+[9.931218] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/_target.py\n'}
+[10.017426] (my_interfaces) StdoutLine: {'line': b"Listing '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces'...\n"}
+[10.017628] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/__init__.py'...\n"}
+[10.017738] (my_interfaces) StdoutLine: {'line': b"Listing '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action'...\n"}
+[10.017848] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/__init__.py'...\n"}
+[10.017941] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_draw_square.py'...\n"}
+[10.018033] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_go_to_pose.py'...\n"}
+[10.018124] (my_interfaces) StdoutLine: {'line': b"Listing '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg'...\n"}
+[10.018236] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/__init__.py'...\n"}
+[10.018333] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/_target.py'...\n"}
+[10.018424] (my_interfaces) StdoutLine: {'line': b"Listing '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv'...\n"}
+[10.018515] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/__init__.py'...\n"}
+[10.018606] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/_set_speeds.py'...\n"}
+[10.022087] (-) TimerEvent: {}
+[10.024878] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.025218] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.025471] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[10.025819] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.026057] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so\n'}
+[10.026392] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[10.027009] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so\n'}
+[10.027448] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mohab14/TASK/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so" to ""\n'}
+[10.027681] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust\n'}
+[10.027889] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/Cargo.toml\n'}
+[10.028068] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/build.rs\n'}
+[10.028276] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src\n'}
+[10.028431] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/srv\n'}
+[10.028550] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/srv/rmw.rs\n'}
+[10.028704] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/action\n'}
+[10.028815] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/action/rmw.rs\n'}
+[10.028918] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/msg.rs\n'}
+[10.029061] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/action.rs\n'}
+[10.029243] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/msg\n'}
+[10.029355] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/msg/rmw.rs\n'}
+[10.029459] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/srv.rs\n'}
+[10.029558] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/rust/src/lib.rs\n'}
+[10.029691] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/msg/Target.idl\n'}
+[10.029878] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/srv/SetSpeeds.idl\n'}
+[10.029997] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/action/GoToPose.idl\n'}
+[10.030097] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/action/DrawSquare.idl\n'}
+[10.030210] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/msg/Target.msg\n'}
+[10.030319] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/srv/SetSpeeds.srv\n'}
+[10.030419] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/action/GoToPose.action\n'}
+[10.030588] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/action/DrawSquare.action\n'}
+[10.030688] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/ament_index/resource_index/package_run_dependencies/my_interfaces\n'}
+[10.030784] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/ament_index/resource_index/parent_prefix_path/my_interfaces\n'}
+[10.030888] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.sh\n'}
+[10.030989] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.dsv\n'}
+[10.031086] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/path.sh\n'}
+[10.031193] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/environment/path.dsv\n'}
+[10.031302] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/local_setup.bash\n'}
+[10.031402] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/local_setup.sh\n'}
+[10.031538] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/local_setup.zsh\n'}
+[10.031719] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/local_setup.dsv\n'}
+[10.031849] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/package.dsv\n'}
+[10.032008] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/ament_index/resource_index/packages/my_interfaces\n'}
+[10.032109] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport.cmake\n'}
+[10.032246] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.032349] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.032447] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.032546] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.032643] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.032775] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[10.032921] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.033019] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cppExport.cmake\n'}
+[10.033120] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.033474] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.033610] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.033719] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.033827] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[10.033932] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.034066] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport.cmake\n'}
+[10.034266] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.034424] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[10.034521] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.034613] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.034710] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.034800] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.034890] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.034979] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.035069] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[10.035159] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig.cmake\n'}
+[10.035266] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig-version.cmake\n'}
+[10.035359] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mohab14/TASK/install/my_interfaces/share/my_interfaces/package.xml\n'}
+[10.036734] (my_interfaces) CommandEnded: {'returncode': 0}
+[10.055895] (my_interfaces) JobEnded: {'identifier': 'my_interfaces', 'rc': 0}
+[10.056901] (turtle_control) JobStarted: {'identifier': 'turtle_control'}
+[10.122212] (-) TimerEvent: {}
+[10.222425] (-) TimerEvent: {}
+[10.322636] (-) TimerEvent: {}
+[10.422852] (-) TimerEvent: {}
+[10.523086] (-) TimerEvent: {}
+[10.623354] (-) TimerEvent: {}
+[10.723571] (-) TimerEvent: {}
+[10.823792] (-) TimerEvent: {}
+[10.924047] (-) TimerEvent: {}
+[11.024289] (-) TimerEvent: {}
+[11.120314] (turtle_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_control', 'build', '--build-base', '/home/mohab14/TASK/build/turtle_control/build', 'install', '--record', '/home/mohab14/TASK/build/turtle_control/install.log', '--install-scripts', '$base/lib/turtle_control', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mohab14/TASK/src/turtle_control', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mohab14', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mohab14/TASK/install/my_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mohab14', 'OLDPWD': '/home/mohab14', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mohab14', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mohab14', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mohab-Precision-5550:@/tmp/.ICE-unix/2459,unix/mohab-Precision-5550:/tmp/.ICE-unix/2459', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e06d2383_164d_44d6_a710_a859506472e5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mohab14/TASK/install/my_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mohab14/TASK/build/turtle_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mohab14/TASK/build/turtle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages:/home/mohab14/TASK/install/my_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mohab14/TASK/install/my_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[11.124358] (-) TimerEvent: {}
+[11.224555] (-) TimerEvent: {}
+[11.324825] (-) TimerEvent: {}
+[11.425072] (-) TimerEvent: {}
+[11.492800] (turtle_control) StdoutLine: {'line': b'running egg_info\n'}
+[11.520840] (turtle_control) StdoutLine: {'line': b'writing ../../build/turtle_control/turtle_control.egg-info/PKG-INFO\n'}
+[11.525272] (-) TimerEvent: {}
+[11.531442] (turtle_control) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_control/turtle_control.egg-info/dependency_links.txt\n'}
+[11.532023] (turtle_control) StdoutLine: {'line': b'writing entry points to ../../build/turtle_control/turtle_control.egg-info/entry_points.txt\n'}
+[11.532513] (turtle_control) StdoutLine: {'line': b'writing requirements to ../../build/turtle_control/turtle_control.egg-info/requires.txt\n'}
+[11.533066] (turtle_control) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_control/turtle_control.egg-info/top_level.txt\n'}
+[11.602677] (turtle_control) StdoutLine: {'line': b"reading manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'\n"}
+[11.604378] (turtle_control) StdoutLine: {'line': b"writing manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'\n"}
+[11.604837] (turtle_control) StdoutLine: {'line': b'running build\n'}
+[11.605020] (turtle_control) StdoutLine: {'line': b'running build_py\n'}
+[11.605662] (turtle_control) StdoutLine: {'line': b'copying turtle_control/goto_pose.py -> /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control\n'}
+[11.605901] (turtle_control) StdoutLine: {'line': b'copying turtle_control/square_movment.py -> /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control\n'}
+[11.606134] (turtle_control) StdoutLine: {'line': b'running install\n'}
+[11.614780] (turtle_control) StdoutLine: {'line': b'running install_lib\n'}
+[11.625374] (-) TimerEvent: {}
+[11.642492] (turtle_control) StdoutLine: {'line': b'copying /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control/goto_pose.py -> /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control\n'}
+[11.642759] (turtle_control) StdoutLine: {'line': b'copying /home/mohab14/TASK/build/turtle_control/build/lib/turtle_control/square_movment.py -> /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control\n'}
+[11.643525] (turtle_control) StdoutLine: {'line': b'byte-compiling /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control/goto_pose.py to goto_pose.cpython-312.pyc\n'}
+[11.645521] (turtle_control) StdoutLine: {'line': b'byte-compiling /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control/square_movment.py to square_movment.cpython-312.pyc\n'}
+[11.646701] (turtle_control) StdoutLine: {'line': b'running install_data\n'}
+[11.647117] (turtle_control) StdoutLine: {'line': b'copying package.xml -> /home/mohab14/TASK/install/turtle_control/share/turtle_control\n'}
+[11.647373] (turtle_control) StdoutLine: {'line': b'creating /home/mohab14/TASK/install/turtle_control/share/turtle_control/launch\n'}
+[11.647601] (turtle_control) StdoutLine: {'line': b'copying launch/system.launch.py -> /home/mohab14/TASK/install/turtle_control/share/turtle_control/launch\n'}
+[11.647875] (turtle_control) StdoutLine: {'line': b'creating /home/mohab14/TASK/install/turtle_control/share/turtle_control/config\n'}
+[11.647979] (turtle_control) StdoutLine: {'line': b'copying config/params.yaml -> /home/mohab14/TASK/install/turtle_control/share/turtle_control/config\n'}
+[11.648073] (turtle_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.675730] (turtle_control) StdoutLine: {'line': b"removing '/home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[11.676021] (turtle_control) StdoutLine: {'line': b'Copying ../../build/turtle_control/turtle_control.egg-info to /home/mohab14/TASK/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info\n'}
+[11.677067] (turtle_control) StdoutLine: {'line': b'running install_scripts\n'}
+[11.725498] (-) TimerEvent: {}
+[11.825754] (-) TimerEvent: {}
+[11.852467] (turtle_control) StdoutLine: {'line': b'Installing goto_pose_node script to /home/mohab14/TASK/install/turtle_control/lib/turtle_control\n'}
+[11.862618] (turtle_control) StdoutLine: {'line': b'Installing square_movement_node script to /home/mohab14/TASK/install/turtle_control/lib/turtle_control\n'}
+[11.863037] (turtle_control) StdoutLine: {'line': b"writing list of installed files to '/home/mohab14/TASK/build/turtle_control/install.log'\n"}
+[11.891025] (turtle_control) CommandEnded: {'returncode': 0}
+[11.897563] (turtle_control) JobEnded: {'identifier': 'turtle_control', 'rc': 0}
+[11.898451] (-) EventReactorShutdown: {}

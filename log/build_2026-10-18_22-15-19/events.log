@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.002201] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.003200] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.099121] (-) TimerEvent: {}
+[0.199704] (-) TimerEvent: {}
+[0.300249] (-) TimerEvent: {}
+[0.400805] (-) TimerEvent: {}
+[0.501359] (-) TimerEvent: {}
+[0.601884] (-) TimerEvent: {}
+[0.702358] (-) TimerEvent: {}
+[0.802884] (-) TimerEvent: {}
+[0.903412] (-) TimerEvent: {}
+[1.003952] (-) TimerEvent: {}
+[1.104500] (-) TimerEvent: {}
+[1.205034] (-) TimerEvent: {}
+[1.305594] (-) TimerEvent: {}
+[1.406124] (-) TimerEvent: {}
+[1.506672] (-) TimerEvent: {}
+[1.607183] (-) TimerEvent: {}
+[1.707718] (-) TimerEvent: {}
+[1.808234] (-) TimerEvent: {}
+[1.908777] (-) TimerEvent: {}
+[2.009325] (-) TimerEvent: {}
+[2.109850] (-) TimerEvent: {}
+[2.210374] (-) TimerEvent: {}
+[2.310897] (-) TimerEvent: {}
+[2.411429] (-) TimerEvent: {}
+[2.511965] (-) TimerEvent: {}
+[2.612511] (-) TimerEvent: {}
+[2.713033] (-) TimerEvent: {}
+[2.813576] (-) TimerEvent: {}
+[2.914092] (-) TimerEvent: {}
+[3.014637] (-) TimerEvent: {}
+[3.115157] (-) TimerEvent: {}
+[3.215710] (-) TimerEvent: {}
+[3.316257] (-) TimerEvent: {}
+[3.352013] (my_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/home/mohab14/TASK/build/my_package/build', 'install', '--record', '/home/mohab14/TASK/build/my_package/install.log', '--install-scripts', '$base/lib/my_package', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mohab14/TASK/src/my_package', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mohab14', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mohab14', 'OLDPWD': '/home/mohab14/TASK/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2447', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mohab14/TASK/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mohab14', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mohab14', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mohab-Precision-5550:@/tmp/.ICE-unix/2403,unix/mohab-Precision-5550:/tmp/.ICE-unix/2403', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4c410dd5_84a0_4857_a52c_8bfc9d12d716', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.105', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mohab14/TASK/install/my_package:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mohab14/TASK/build/my_package', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mohab14/TASK/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages:/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[3.416443] (-) TimerEvent: {}
+[3.516954] (-) TimerEvent: {}
+[3.617491] (-) TimerEvent: {}
+[3.718022] (-) TimerEvent: {}
+[3.818584] (-) TimerEvent: {}
+[3.919106] (-) TimerEvent: {}
+[4.019652] (-) TimerEvent: {}
+[4.120170] (-) TimerEvent: {}
+[4.220718] (-) TimerEvent: {}
+[4.321241] (-) TimerEvent: {}
+[4.421786] (-) TimerEvent: {}
+[4.522322] (-) TimerEvent: {}
+[4.529541] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[4.618157] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[4.618985] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[4.619724] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[4.620365] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[4.621011] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[4.622454] (-) TimerEvent: {}
+[4.722945] (-) TimerEvent: {}
+[4.801807] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[4.804725] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[4.805366] (my_package) StdoutLine: {'line': b'running build\n'}
+[4.805730] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[4.806146] (my_package) StdoutLine: {'line': b'copying my_package/my_subscriber.py -> /home/mohab14/TASK/build/my_package/build/lib/my_package\n'}
+[4.806818] (my_package) StdoutLine: {'line': b'copying my_package/my_publisher.py -> /home/mohab14/TASK/build/my_package/build/lib/my_package\n'}
+[4.807766] (my_package) StdoutLine: {'line': b'running install\n'}
+[4.823128] (-) TimerEvent: {}
+[4.835445] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[4.923366] (-) TimerEvent: {}
+[4.925278] (my_package) StdoutLine: {'line': b'copying /home/mohab14/TASK/build/my_package/build/lib/my_package/my_subscriber.py -> /home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package\n'}
+[4.925981] (my_package) StdoutLine: {'line': b'copying /home/mohab14/TASK/build/my_package/build/lib/my_package/my_publisher.py -> /home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package\n'}
+[4.927959] (my_package) StdoutLine: {'line': b'byte-compiling /home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package/my_subscriber.py to my_subscriber.cpython-312.pyc\n'}
+[4.929981] (my_package) StdoutLine: {'line': b'byte-compiling /home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package/my_publisher.py to my_publisher.cpython-312.pyc\n'}
+[4.932139] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[4.932899] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.023558] (-) TimerEvent: {}
+[5.026735] (my_package) StdoutLine: {'line': b"removing '/home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.027696] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /home/mohab14/TASK/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info\n'}
+[5.030861] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[5.123754] (-) TimerEvent: {}
+[5.224293] (-) TimerEvent: {}
+[5.324817] (-) TimerEvent: {}
+[5.425349] (-) TimerEvent: {}
+[5.525875] (-) TimerEvent: {}
+[5.597936] (my_package) StdoutLine: {'line': b'Installing pub script to /home/mohab14/TASK/install/my_package/lib/my_package\n'}
+[5.598747] (my_package) StdoutLine: {'line': b'Installing sub script to /home/mohab14/TASK/install/my_package/lib/my_package\n'}
+[5.599692] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/mohab14/TASK/build/my_package/install.log'\n"}
+[5.626083] (-) TimerEvent: {}
+[5.681192] (my_package) CommandEnded: {'returncode': 0}
+[5.720909] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[5.723599] (-) EventReactorShutdown: {}

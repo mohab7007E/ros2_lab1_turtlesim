@@ -1,0 +1,9 @@
+{
+  "package_name": "my_interfaces",
+  "non_idl_tuples": [
+    "/home/mohab14/TASK/src/my_interfaces:msg/Target.msg",
+    "/home/mohab14/TASK/src/my_interfaces:srv/SetSpeeds.srv",
+    "/home/mohab14/TASK/src/my_interfaces:action/GoToPose.action",
+    "/home/mohab14/TASK/src/my_interfaces:action/DrawSquare.action"
+  ]
+}

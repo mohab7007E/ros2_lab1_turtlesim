@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: turtle-control
+Version: 0.0.0
+Summary: Turtlesim control: goToPose, reset, speeds, square
+Maintainer: mohab14
+Maintainer-email: mohab14@todo.todo
+License: MIT
+Provides-Extra: test

@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_interfaces/action/DrawSquare.action
+// generated code does not contain a copyright notice
+
+
+module my_interfaces {
+  module action {
+    struct DrawSquare_Goal {
+      float side_length;
+    };
+    struct DrawSquare_Result {
+      boolean success;
+    };
+    struct DrawSquare_Feedback {
+      int32 current_side;
+    };
+  };
+};
